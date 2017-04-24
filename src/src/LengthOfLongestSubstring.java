@@ -1,5 +1,4 @@
 package src;
-import java.util.Map;
 import java.util.HashMap;
 
 public class LengthOfLongestSubstring {
@@ -21,7 +20,7 @@ public class LengthOfLongestSubstring {
 	public static int lengthOfLongestSubstring(String s) {
 		if(s.length() == 0) return 0;
 		int max = 0;
-		Map<Character, Integer> map = new HashMap<Character, Integer>();
+		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 		int length = 0;
 		for(int i = 0; i < s.length(); i++) {
 			if(map.containsKey(s.charAt(i))) {
